@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50,
@@ -31,12 +31,31 @@ class MyApp extends StatelessWidget {
             Text(
               'A LEGEND OF PHILI',
               style: TextStyle(
-                  fontSize: 13,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                  // fontFamily: ''
-                  ),
+                fontSize: 13,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+                // fontFamily: ''
+              ),
             ),
+            Container(
+              padding: EdgeInsets.all(10),
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    size: 100,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text('+44 424 828 1919',
+                      style: TextStyle(fontFamily: 'Source Sans Pro'))
+                ],
+              ),
+            )
           ],
         )),
       ),
