@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,25 +13,29 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              color: Colors.white,
-              child: Text('Hello'),
-              height: 100,
-              width: 100,
-              margin: EdgeInsets.symmetric(vertical: 50, horizontal: 100),
+            CircleAvatar(
+              radius: 50,
+              // backgroundColor: Colors.red,
+              foregroundImage: AssetImage('images/mrdevito.jpeg'),
             ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.blue,
-              child: Text('Second Container'),
+            Text(
+              'Danny Devito',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico'),
             ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
-              child: Text('Second Container'),
+            Text(
+              'A LEGEND OF PHILI',
+              style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  // fontFamily: ''
+                  ),
             ),
           ],
         )),
