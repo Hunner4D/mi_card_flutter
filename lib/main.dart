@@ -37,6 +37,18 @@ class MyApp extends StatelessWidget {
                 // fontFamily: ''
               ),
             ),
+            Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    '+44 310 287 6769',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'),
+                  ),
+                )),
             Container(
               padding: EdgeInsets.all(10),
               color: Colors.white,
